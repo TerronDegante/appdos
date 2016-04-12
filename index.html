@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Semana Santa En México </h1>
+  </div>
+   <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/SEMANASANTA2.jpg',0)"><img src="imagenes/semanasantasus.jpg" width="640" height="427" id="Image18"></a>
+ 
+  </div>
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿Qué es la Semana Santa?</h2>
+    <p>Mostrar</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>¿Qué religiones la celebran?</h2>
+       <p>Mostrar</p>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>La Semana Santa en Atlixco</h2>
+      <p>Mostrar</p>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Celebración en el Estado de Puebla</h2>
+      <p>Mostrar</p>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Celebración en Iztapalapa</h2>
+      <p>Mostrar</p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Celebración en San Luis Potosí</h2>
+      <p>Mostrar</p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Celebración en Guerrero</h2>
+      <p>Mostrar</p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Celebración en Oaxaca</h2>
+      <p>Mostrar</p>
+      </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="res/android/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicación Dos</h4>
+     <h4>Guadalupe Isabel Terron De Gante</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿Qué es la Semana Santa?</h1>
+  </div>
+ <div data-role="content">
+  <div>
+     <img src="imagenes/SEMANASANTA.jpg" alt="tamaño original" align="center">
+     <br>
+    <p> La Semana Santa es el momento litúrgico más intenso de todo el año. Sin embargo, para muchos católicos se ha convertido sólo en una ocasión de descanso y diversión. Se olvidan de lo esencial: esta semana la debemos dedicar a la oración y la reflexión en los misterios de la Pasión y Muerte de Jesús para aprovechar todas las gracias que esto nos trae.
+Para vivir la Semana Santa, debemos darle a Dios el primer lugar y participar en toda la riqueza de las celebraciones propias de este tiempo litúrgico.
+     <br>
+     <img src="imagenes/SEMANASANTA2.jpg" alt="tamaño original" align="center">
+     <br>
+     <br>
+    A la Semana Santa se le llamaba en un principio “La Gran Semana”. Ahora se le llama Semana Santa o Semana Mayor y a sus días se les dice días santos. Esta semana comienza con el Domingo de Ramos y termina con el Domingo de Pascua.
+Lo importante de este tiempo no es el recordar con tristeza lo que Cristo padeció, sino entender por qué murió y resucitó. Es celebrar y revivir su entrega a la muerte por amor a nosotros y el poder de su Resurrección, que es primicia de la nuestra.
+La Semana Santa fue la última semana de Cristo en la tierra. Su Resurrección nos recuerda que los hombres fuimos creados para vivir eternamente junto a Dios.
+  <br>
+Durante la Semana Santa, el católico cumple con diversos actos, como: procesiones, escenificación del drama de la muerte y pasión de Cristo. Los penitentes se someten a duras cargas como símbolo de su auto sacrificio y, en el día Viernes Santo, los fieles deben de guardar ayuno y abstenerse de comer carne.
+  </div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Guadalupe Isabel Terron De Gante</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>¿Qué religiones la celebran?</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p><img src="imagenes/CELEBRACIONTESTIGOS.jpg" align="left" width="30%" height="30%"> "TESTIGOS DE JEHOVA"<br>  Para los testigos de Jehová la Semana Santa comienza el 14 de abril, o 14 de Nisán, y comprende desde la puesta de sol hasta la próxima.
+De acuerdo con su tradición, la única acción que Jesús mandó a conmemorar en esta fecha es la última cena; por esto, la comunidad se reúne en el Salón del Reino para recordar esta acción, reflexionar sobre ella y el significado de la muerte y resurrección de Jesús, como rey mas no como Dios todopoderoso.
+ <br>
+ <br>
+ <img src="imagenes/CELEBRACIONMORMONA.jpg" width="30%" height="30%" align="right">  
+"MORMONES" <br>
+La Semana Santa de los mormónes inicia desde el Lunes Santo, y como suelen hacer muy habitualmente durante muchas semanas del año, se reúnen en lo que llaman la “noche del hogar” para recordar pasajes de la Biblia protestante y, sobre todo, de sus libros sagrados. Son momentos de estar en familia, de compartir, y recordar cómo Jesús, que era un hombre según ellos, sólo un hombre, se hizo Dios también, otro dios, por sus propias fuerzas y comportamiento, según ellos afirman, y esto mismo es lo que ellos también quieren hacer, convertirse en dioses y regentar el gobierno de algunos sistemas solares del universo.
+<br>
+ <br>
+ <img src="imagenes/CELEBRACIONCATOLICA.jpg" width="30%" height="30%" align="left">
+ "CATOLICOS" <br>
+La Semana Mayor para los católicos es la época en la que se recuerda y celebra los hechos más relevantes en la vida de Jesús de Nazaret (la Pasión, Muerte y Resurrección), comenzando con el llamado Domingo de Ramos y finalizando el Domingo de Resurrección o también llamado de Pascua.
+Tiene lugar después de la Cuaresma, el ciclo de cuarenta días que abarca desde el Miércoles de Ceniza hasta el Jueves Santo. Concretamente, la celebración comienza el domingo de Ramos y finaliza el Sábado Santo, aunque en algunos lugares se adelanta al viernes anterior (el de Dolores) y se prolonga hasta el Domingo de Resurrección.
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>La Semana Santa en Atlixco</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <br>
+<img src="imagenes/SSATLIXCO5.jpg" alt="tamaño original" align="center">
+<br>
+<p>
+Durante la temporada vacacional de Semana Santa que se lleva a cabo en el municipio deAtlixco, el alcalde Ricardo Camacho Corripio dio a conocer las tradiciones de fe que distinguen a la entidad que, aunado a los diversos atractivos que la región ofrece, permitirá atraer más de 80 mil visitantes en estos días
+ <br>
+ <br>
+Cabe precisar que en la “Procesión de los Engrillados” los participantes se caracterizan por vestir de luto y portar pesadas cadenas de aproximadamente 60 kilos, además de ponerse espinas en el cuerpo. Ellos recorren las principales calle de la ciudad y tienen una preparación, tanto espiritual como física de dos meses. Se realizará también el viernes 6 de abril.
+<br>
+<img src="imagenes/SSATLIXCO.jpg" alt="tamaño original" align="center">
+<br>
+Las principales calles de este municipio situado a unos 150 kilómetros por carretera de la capital mexicana, se cubren con alfombras decorativas elaboradas con serrín de colores en un recorrido de cinco kilómetros que comienza en el Exconvento de San Francisco.
+<br>
+ <img src="imagenes/SSATLIXCO4.jpg" alt="tamaño original" align="center">
+<br>
+ <br>
+Atlixco inició la celebración de la semana santa con la inauguración del tradicional tapete floral, que con poco más de 42 mil plantas cubre una superficie de mil 200 metros cuadrados con inversión de 382 mil pesos, para el disfrute de pobladores y visitantes.
+<br>
+ <img src="imagenes/SSATLIXCO3.jpg" alt="tamaño original" align="center">
+<br>
+Sabado es celebrado en balnearios, rios, etc. Para celebrar la resurreccion de Cristo.
+</div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ 
+ <div data-role="collapsible" data-content-theme="false">
+  
+  <h1>TAPETE DE FLORES</h1>
+     <div>
+    <h2>Atlixco Pueblo Magico 'Tapete de flores'</h2>      <br>
+     <img src="imagenes/SSATLIXCO2.jpg" alt="tamaño original" align="center">
+     <br>
+      <p>Por sexto año consecutivo, un tapete monumental de flores fue inaugurado en el zócalo de Atlixco como parte de los atractivos para Semana Santa, tiempo en el que el municipio espera recibir 74 mil visitantes.
+     <br>
+     <br>
+     Para la elaboración del tapete se usaron aproximadamente 42 mil plantas con más de 120 mil flores, entre ellas violas, colios, mosaico verde y lenguas de pájaro. Además, por primera vez se instalaron dos mariposas.
+<br>
+     </div>
+  </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+ <div data-role="footer" data-theme="a">
+  <h4>Guadalupe Isabel Terron De Gante</h4>
+  </div>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Celebración en el Estado de Puebla</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+ <p> <img src="imagenes/SEMANASENPUEBLA.jpg" alt="tamaño original" align="center">
+ <br>
+ La celebración de Semana Santa es para los poblanos una de las conmemoracioLa celebración de Semana Santa es para los poblanos una de las conmemoraciones más importantes del año cristiano; durante estos días aquellas personas que profesan alguna de las diferentes confesiones de la fe cristiana acuden a las iglesias más emblemáticas de Puebla para recordar la Pasión, Muerte y Resurrección de Jesús de Nazaret.
+ <br>
+  Una de los actos mas significativos durante la semana santa es la tradicional Procesión de Viernes santo, misma que este 2016 cumple 25 años y que es considerada de las mas grandes del país. La Procesión de Viernes Santo, tiene como objetivo ser un encuentro de reflexión y renovación espiritual con el Señor, en su veinticinco edición, las cinco imágenes que recorren las principales calles del Centro Histórico de Puebla son consideradas entre las más representativas de Puebla, simbolizan este acontecimiento solemne de Fe, donde se contemplan con devoción la pasión y muerte de Jesucristo.
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Iztapalapa</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+  <br> <img src="imagenes/SEMANASIZTAPALAPA.jpg" alt ="tamaño original" align="center">  
+<br>
+ <p>
+En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.
+<br>
+Los episodios más importantes tienen lugar el Domingo de Ramos con la Procesión y la Bendición de las Palmas; el Jueves Santo en el Jardín Cuitláhuac, y el Viernes Santo con la secuencia de la sentencia, los azotes, la coronación de espinas y el Vía Crucis que culmnina en el Cerro de la Estrella con la crucifixión. Al conocerse los días en que va a caer la Semana Mayor, comienzan los preparativos y se selecciona a los protagonistas del drama, quienes inician los ensayos desde enero.
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>San Luis Potosí</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+ <p> <img src="imagenes/SEMANASSANLUISPO.jpg" alt="tamaño original" align="left">
+ <br>
+ La Procesión del Silencio de San Luis Potosí es un evento anual que conmemora la pasión y muerte de Cristo y aNuestra Señora de la Soledad. Ocurre en la noche del Viernes Santo, empezando en el Templo del Carmen, de donde es originario, y el recorrido sigue a través de las calles del centro histórico de la ciudad de San Luis Potosí. Durante el evento se encuentran los sonidos de tambores y cornetas, pero ningún participante o espectador habla, ameritando su nombre. Es una de las celebraciones de Semana Santa más importante de México y fue declarada parte del patrimonio cultural del estado de San Luis Potosí en el 2013.
+La procesión tiene lugar en Viernes Santo, en el centro histórico de la ciudad de San Luis Potosí, al rededor de iglesias y edificios de la época virreinal.4 Iluminada con cirios, las calles tienen un ambiente de la calle de la amargura y aunque miles de espectadores bordean las calles, nadie va a hablar durante las horas de la procesión, lo que le atribuye su nombre.
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Guerrero</h1>
+ </div>
+<div data-role="content" >
+ <div>
+ <p> <img src="imagenes/SEMANASGUERRERO.jpg" alt="tamaño original" align="left">
+ Llenos de entusiasmo; o la colorida generosidad del “Día de la Samaritana”, con el obsequio de aguas frescas en templos, escuelas, oficinas, negocios, etc.
+ Semana Santa, el Pueblo Mágico de Taxco, al sur de Guerrero, es uno de los primeros sitios que vienen a la mente. El arraigo de las fiestas de la Semana Mayor inició, LUNES Se efectúa la Procesión de las Ánimas durante la noche y es acaso uno de los momentos más impactantes de la fiestas de la Semana Mayor, sin mencionar la solemnidad con que los participantes –encruzados, flagelantes y ánimas- llevan a cabo su papel en las procesiones.
+ <br>
+ <br>
+JUEVES Una vez más, el atrio del Templo de Santa Prisca es el escenario de uno de los pasajes de esta historia: Jesús en el Huerto de Getsemaní
+VIERNES Es el día más importante de las fiestas de Semana Santa por la serie de eventos que se llevan a cabo en distintos puntos de Taxco. Desde muy temprano, a las 6 de la mañana, los eventos inician con el Sermón de la Flagelación de Jesús; a las 10 horas, la procesión de Jesús al calvario y en la Plaza Borda, se escenifican las tres caídas. 
+<br>
+ <br>
+SABADO
+Los habitantes del Pueblo Mágico de Taxco guardan silencio durante el día en señal de luto, pero es en la noche, a las cero horas, cuando se lleva a cabo la misa de Resurrección, se queman los Judas y se regalan palmas benditas en señal de júbilo. 
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Oaxaca</h1>
+ </div>
+ <div data-role="content" align= "center" >
+ <div>
+ <p>
+ Dentro de la gama de festejos religiosos para los Oaxaqueños la cuaresma y la Semana Santa reviste gran significado.
+<br>
+<br>
+El Lunes Santo se celebra con gran respeto en la Villa de Zaachila con una serie de actividades costumbristas relacionadas con la Semana Mayor, el Martes Santo con la Festividad del Señor de las tres caídas en el barrio de Xochimilco , el miércoles santo hay exhibiciones de los estandartes y relicarios de las diferentes cofradías y relicarios de los diversos barrios de la ciudad de Oaxaca, el Jueves Santo se realiza después de las seis de la tarde la Visita de Los Siete Templos, en donde los altares representan la última cena de Jesús con sus apóstoles y el Viernes Santo se realiza la Procesión del Silencio en donde participan las diversas cofradías de la ciudad de Oaxaca.
+En el Estado de Oaxaca la Semana Santa muestra tintes diversos: desde el respeto y solemnidad con que los oaxaqueños acuden a los templos a tomar ceniza y el recogimiento con el que los católicos manifiestan su luto durante esta semana, hasta la alegría de los “Viernes del Llano” que los jóvenes, celebran en la ciudad capital. </p>
+<div data-role= "main" class="ui-content">
+<div data-role= "collapsible" data-content-theme="false">
+  <h1>Semana santa Oaxaca</h1> 
+  <div>
+    <img src="imagenes/SEMANASOAXACA.jpg" alt="tamaño original">
+ </div>
+ 
+ </div>
+ </div> 
+ </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </body>
+ </html>
